@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  game1:
+    image: web-game:game1
+    container_name: web-game1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    tty: true
