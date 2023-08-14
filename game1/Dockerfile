@@ -27,4 +27,4 @@ RUN chwon -R node:node /app ; \
 
 USER node
 
-CMD ["/bin/bash", "-c", "npm i && npm start"]
+# CMD ["/bin/bash", "-c", "npm i && npm start"]
