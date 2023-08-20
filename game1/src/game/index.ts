@@ -1,12 +1,11 @@
 import { Scene } from "./stages/main/Scene";
 
-const config: Phaser.Types.Core.GameConfig = {
+export const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
     parent: "phaser-container",
     backgroundColor: "#DDD",
     scale: {
         mode: Phaser.Scale.ScaleModes.FIT,
-        autoCenter: Phaser.Scale.CENTER_BOTH,
         width: window.innerWidth,
         height: window.innerHeight,
     },
@@ -19,5 +18,3 @@ const config: Phaser.Types.Core.GameConfig = {
     },
     scene: [Scene],
 };
-
-export default new Phaser.Game(config);

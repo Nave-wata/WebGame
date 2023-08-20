@@ -1,12 +1,13 @@
 import React from 'react';
-import { GameComponent } from './components/Game';
+import { AppRoutes } from './routes';
+import { AppProvider } from './providers';
 
 function App() {
-  return (
-    <div className="App">
-      <GameComponent />
-    </div >
-  );
+    return (
+        <AppProvider>
+            <AppRoutes />
+        </AppProvider>
+    );
 };
 
 export default App;
